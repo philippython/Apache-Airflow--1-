@@ -8,8 +8,9 @@ created on saturday 8th of october 2022
 """
 # The DAG object; we'll need this to instantiate a DAG
 from airflow import DAG
-from airflow.operators.bash import BashOperator
+from airflow.operators.bash_operators import BashOperator
 from datetime import datetime, timedelta
+
 
 
 default_args = {"owner":"airflow", "start_date": datetime(2022, 10, 8)}
